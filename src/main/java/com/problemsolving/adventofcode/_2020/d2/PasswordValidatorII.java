@@ -33,9 +33,6 @@ public class PasswordValidatorII {
         if(pwd.charAt(position[0]-1)==input && pwd.charAt(position[1]-1)==input){
             return false;
         }
-        if(pwd.charAt(position[0]-1)==input || pwd.charAt(position[1]-1)==input){
-            return true;
-        }
-        return false;
+        return pwd.charAt(position[0] - 1) == input || pwd.charAt(position[1] - 1) == input;
     }
 }
